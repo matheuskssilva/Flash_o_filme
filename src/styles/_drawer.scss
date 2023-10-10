@@ -1,0 +1,106 @@
+@use 'variaveis';
+.drawer__container {
+    .drawer__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        padding-bottom: 80px;
+        @media screen and (max-width: 768px) {
+            width: 350px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1080px) {
+            width: 700px;
+        }
+        .title {
+            @media screen and (max-width: 768px) {
+                width: 400px;
+                font-size: 22px;
+                align-items: center;
+                justify-content: center;
+                margin-left: 100px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1080px) {
+                width: 550px;
+                font-size: 32px;
+                align-items: center;
+                justify-content: center;
+                margin-left: 200px;
+            }
+        }
+        &__text {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+            padding-top: 40px;
+            margin: 0 auto;
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+            .drawer__text {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 768px) and (max-width: 1080px) {
+                    margin-left: 100px;
+                }
+                @media screen and (max-width: 768px) {
+                    margin-left: 50px;
+                    text-align: center;
+                }
+                h1 {
+                    letter-spacing: 1px;
+                    width: 450px;
+                    @media screen and (max-width: 768px) {
+                        width: 300px;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+                p {
+                    font-weight: 500;
+                    width: 400px;
+                    margin-top: 10px;
+                    @media screen and (max-width: 768px) {
+                        font-size: 12px;
+                        width: 300px;
+                    }
+                }
+                button {
+                    padding: 12px;
+                    font-family: variaveis.$fontTitle;
+                    font-size: 21px;
+                    color: variaveis.$cortitle;
+                    background-color: #e4a403;
+                    border: none;
+                    border-radius: 2px;
+                    cursor: pointer;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    transition: .5s ease;
+                    width: 390px;
+                    @media screen and (max-width: 768px) {
+                        width: 290px;
+                    }
+                    &:hover {
+                        background-color: white;
+                        color: #e4a403;
+                    }
+                }
+            }
+            img {
+                margin-left: 150px;
+                margin-top: 20px;
+                @media screen and (max-width: 768px) {
+                    margin-left: 10px;
+                    margin-top: 25px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1080px) {
+                    margin-left: 10px;
+                    margin-top: 25px;
+                }
+            }
+        }
+    }
+}

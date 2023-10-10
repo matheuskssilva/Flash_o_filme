@@ -1,0 +1,29 @@
+@use 'variaveis';
+.cast__container {
+    .cast__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        padding-bottom: 120px;
+        .cast {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            .cast__content__images {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 40px;
+                @media screen and (max-width: 768px) {
+                    grid-template-columns: 1fr;
+                }
+                img {
+                    transition: .6s ease;
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+}

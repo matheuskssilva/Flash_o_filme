@@ -1,0 +1,77 @@
+@use 'variaveis';
+.characters {
+    background-color: variaveis.$corDeFundoSecondary;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    padding-bottom: 120px;
+}
+
+.carousel-item {
+    height: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    img {
+        width: 200px;
+        height: 300px;
+        @media screen and (max-width: 768px) {
+            width: 150px;
+            height: 250px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1080px) {
+            width: 350px;
+            height: 300px;
+        }
+    }
+    p {
+        width: 350px;
+        @media screen and (max-width: 768px) {
+            width: 180px;
+            font-size: 10px;
+        }
+    }
+    .container__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        margin: 50px auto;
+        gap: 50px;
+        @media screen and (max-width: 768px) {
+            gap: 30px;
+        }
+        &__description {
+            text-align: center;
+            h1 {
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 14px;
+                @media screen and (max-width: 768px) {
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+#carouselExampleIndicators {
+    width: 1200px !important;
+    @media screen and (max-width: 768px) {
+        width: 350px !important;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1080px) {
+        width: 800px !important;
+    }
+}
+
+.carousel-indicators {
+    button {
+        margin-top: 500px;
+    }
+}
