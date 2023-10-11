@@ -6,18 +6,6 @@ const trailerButton = document.getElementById('trailerButton')
 const iframeModal = document.getElementById('iframe__container')
 const closeBtn = document.getElementById('closeBtn')
 
-trailerButton.addEventListener('click', function() {
-    iframeModal.style.display = 'block'
-    closeBtn.style.display = 'block'
-})
-
-closeBtn.addEventListener('click', function() {
-
-    closeBtn = iframeModal.style.display = 'none'
-
-})
-
-
 document.addEventListener('DOMContentLoaded', function() {
     const iframeModal = document.getElementById('iframe__modal')
     const closeBtnModal = document.getElementById('closeBtnModal')
